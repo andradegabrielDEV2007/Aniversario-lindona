@@ -1,0 +1,96 @@
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+/* linha central */
+.timeline::before{
+    content:"";
+    position:absolute;
+    width:4px;
+    height:100%;
+    background:#ccc;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* containers */
+.container{
+    padding:10px 40px;
+    position:relative;
+    width:50%;
+}
+
+/* bolinha */
+.container::after{
+    content:'';
+    position:absolute;
+    width:25px;
+    height:25px;
+    right:-13px;
+    background:white;
+    border:4px solid #ff4b6e;
+    top:15px;
+    border-radius:50%;
+    z-index:1;
+}
+
+/* lados */
+.left{
+    left:0;
+}
+
+.right{
+    left:50%;
+}
+
+.right::after{
+    left:-13px;
+}
+
+/* card */
+.content{
+    padding:20px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.titulo-container{
+    display:flex;
+    justify-content:center;
+    margin-bottom:80px;
+    
+}
+
+#Titulo{
+    background:white;
+    padding:20px 47px;
+    border-radius: 10px;    
+    box-shadow:0 8px 20px rgba(233,30,99,0.4);
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+    .timeline::before{
+        left:20px;
+    }
+
+    .container{
+        width:100%;
+        padding-left:70px;
+        padding-right:25px;
+    }
+
+    .container::after{
+        left:8px;
+    }
+
+    .right{
+        left:0%;
+    }
+
+}

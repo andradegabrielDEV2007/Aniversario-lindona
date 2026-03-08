@@ -1,0 +1,56 @@
+/* Header */
+header{
+    width:100%;
+    padding:25px 0;
+    display:flex;
+    justify-content:center;
+}
+
+/* Lista */
+#nav_list{
+    display:flex;
+    list-style:none;
+    gap:60px;
+}
+
+/* Links */
+#nav_list a{
+    text-decoration:none;
+    font-size:18px;
+    color:#333;
+    position:relative;
+    transition:0.3s;
+}
+
+/* Hover */
+#nav_list a:hover{
+    color:#e91e63;
+}
+
+/* Linha animada */
+#nav_list a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#e91e63;
+    transition:0.3s;
+}
+
+#nav_list a:hover::after{
+    width:100%;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:700px){
+
+    #nav_list{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+}

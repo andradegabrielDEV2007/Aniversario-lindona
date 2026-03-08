@@ -1,0 +1,17 @@
+body{
+    background: #9bd28a70;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Container padrão */
+main{
+    width:100%;
+    padding:20px;
+}

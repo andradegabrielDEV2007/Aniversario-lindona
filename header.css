@@ -17,14 +17,14 @@ header{
 #nav_list a{
     text-decoration:none;
     font-size:18px;
-    color:#333;
+    color:#84aa86;
     position:relative;
     transition:0.3s;
 }
 
 /* Hover */
 #nav_list a:hover{
-    color:#e91e63;
+    color:#F48FB1;
 }
 
 /* Linha animada */
@@ -35,7 +35,7 @@ header{
     bottom:-5px;
     width:0%;
     height:2px;
-    background:#e91e63;
+    background:#F48FB1;
     transition:0.3s;
 }
 

@@ -1,0 +1,170 @@
+/* ========================= */
+/* TÍTULO */
+/* ========================= */
+
+.titulo-mensagens{
+
+text-align:center;
+
+margin-top:30px;
+margin-bottom:30px;
+
+color:#EC407A;
+
+font-size:40px;
+
+letter-spacing:1px;
+
+}
+
+
+/* linha decorativa abaixo do título */
+
+.titulo-mensagens::after{
+
+content:"";
+
+display:block;
+
+width:120px;
+height:4px;
+
+background:#EC407A;
+
+margin:10px auto;
+
+border-radius:10px;
+
+}
+
+
+/* ========================= */
+/* CONTAINER DAS MENSAGENS */
+/* ========================= */
+
+.mensagens-container{
+
+width:90%;
+max-width:1000px;
+
+margin:40px auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:35px;
+
+}
+
+
+/* ========================= */
+/* CARD DAS MENSAGENS */
+/* ========================= */
+
+.card-mensagem{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 10px 30px rgba(236,64,122,0.25);
+
+line-height:1.6;
+
+transition:0.4s;
+
+animation:aparecerCard 0.8s ease;
+
+}
+
+
+/* título do card */
+
+.card-mensagem h2{
+
+color:#66BB6A;
+
+margin-bottom:10px;
+
+font-size:20px;
+
+}
+
+
+/* texto */
+
+.card-mensagem p{
+
+color:#444;
+
+font-size:16px;
+
+text-align:justify;
+
+}
+
+
+/* ========================= */
+/* HOVER DOS CARDS */
+/* ========================= */
+
+.card-mensagem:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 50px rgba(236,64,122,0.35);
+
+}
+
+
+/* ========================= */
+/* ANIMAÇÃO DE ENTRADA */
+/* ========================= */
+
+@keyframes aparecerCard{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+
+@media (max-width:600px){
+
+.titulo-mensagens{
+
+font-size:30px;
+
+}
+
+.mensagens-container{
+
+gap:20px;
+
+}
+
+.card-mensagem{
+
+padding:20px;
+
+}
+
+}
